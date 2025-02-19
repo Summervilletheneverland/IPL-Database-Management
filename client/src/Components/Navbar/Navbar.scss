@@ -1,0 +1,48 @@
+$primary:#143989;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:$primary;
+  color: #fff;
+  height:80px;
+  width:100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 150px; /* Adjust size as needed */
+  height: 80px; /* To maintain aspect ratio */
+}
+
+.navbar-nav {
+  font-weight: 600;
+  font-size:larger;
+  width:60%;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+
+.nav-item {
+  margin:auto;
+}
+
+.nav-link {
+  color:#ffff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-right {
+  margin-left: auto; /* Push Sign Out link to the right */
+}
