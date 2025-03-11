@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Navbar_admin from '../Navbar/Navbar_admin';
-import styles from './Admin.scss';
+import /*styles from*/ './Admin.scss';
 function Admin() {
   const [players, setPlayers] = useState([]);
 
@@ -82,9 +82,9 @@ console.log(response)
   return (
     <div>
       <Navbar_admin />
-      <div className={styles.container}>
+      <div className="container">
         {/* <h1>Admin Home Page</h1> */}
-        <form ref={formRef} onSubmit={handleAddPlayer} id='form_admin' className={styles.form_admin}>
+        <form ref={formRef} onSubmit={handleAddPlayer} id='form_admin' className="form_admin">
           <div>
             <label>Name:</label>
             <input type="text" name="name" required />
@@ -183,7 +183,7 @@ console.log(response)
       </div>
 
       <h3>SEARCH AND DELETE A PLAYER</h3>
-      <form onSubmit={handleSearch} id ='form_admin' className={styles.form}>
+      <form onSubmit={handleSearch} id ='form_admin' className="form">
           <div>
             <label>Search Player by Name:</label>
             <input 
@@ -197,12 +197,12 @@ console.log(response)
           </div>
         </form>
 
-        {successMessage && <div className={styles.successMessage}>{successMessage}</div>}
+        {successMessage && <div className="successMessage">{successMessage}</div>}
 
         <h2>Search Results</h2>
-        <ul className={styles.playerList}>
+        <ul className="playerList">
           {players.map(player => (
-            <li key={player.player_id} className={styles.playerItem}>
+            <li key={player.player_id} className="playerItem">
               <div>
                 <strong>{player.player_name}</strong> ({player.role})  ({player.age})
               </div>
