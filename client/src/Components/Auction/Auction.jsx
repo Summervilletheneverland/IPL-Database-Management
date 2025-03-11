@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Navbar from '../Navbar/Navbar'
-import styles from './../Admin/Admin.scss'
+import /*styles from*/ './../Admin/Admin.scss'
 function Auction() {
   const [searchName, setSearchName] = useState('');
   const [players, setPlayers] = useState([]);
